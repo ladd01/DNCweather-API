@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DncWeather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="display-4 mb-0">DncWeather</h1>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Endereços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Previsão do tempo</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="intro text-center mb-5 d-flex align-items-center justify-content-center">
+            <div class="text-container">
+                <h2 class="mb-0">Descubra Mais com Precisão: <br> Previsões do Tempo e endereços <br> em tempo real.</h2>
+            </div>
+            <div class="logo">
+                <img src="./imagens/logo.svg" alt="Weather Icon" id="weather-icon" class="img-fluid">
+            </div>
+        </section>
+
+        <section class="form-section mb-5">
+            <div class="card">
+                <div class="card-body">
+                    <form id="cep-form">
+                        <div class="form-group">
+                            <label for="firstName">Primeiro Nome:</label>
+                            <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Insira seu primeiro nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Insira seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cep">Digite o CEP:</label>
+                            <input type="text" id="cep" name="cep" class="form-control" placeholder="Insira o CEP" required pattern="\d{5}-?\d{3}">
+                        </div>
+                        <div class="form-group">
+                            <label for="coordinates">Digite a latitude e longitude para saber a previsão:</label>
+                            <div class="inputs">
+                                <input type="text" id="latitude" name="latitude" placeholder="Latitude">
+                                <input type="text" id="longitude" name="longitude" placeholder="Longitude">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary shadow-sm">Acessar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="result-section mb-5">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+                <h2 class="text-center mb-0">Resultado da busca por CEP:</h2>
+                <div class="logo ml-2">
+                    <img src="./imagens/logo2.svg" alt="Weather Icon" id="weather-icon" class="img-fluid">
+                </div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Logradouro</th>
+                        <th>Bairro</th>
+                        <th>Localidade/UF</th>
+                    </tr>
+                </thead>
+                <tbody id="cep-result">
+                    <tr>
+                        <td id="logradouro"></td>
+                        <td id="bairro"></td>
+                        <td id="localidade"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="weather-section mb-5">
+            <div class="d-flex justify-content-center align-items-center mb-3 weather-result-box">
+                <h2 class="text-center mb-0">Previsão do tempo na região:</h2>
+                <div class="logo ml-2">
+                    <img src="./imagens/logo3.svg" alt="Weather Icon" id="weather-icon" class="img-fluid">
+                </div>
+            </div>
+            <div id="weather-result" class="text-center">
+                <div class="rounded-container">
+                    <p>Previsão de tempo de acordo com a região: <span id="temperature"></span>°C </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary text-white py-3">
+        <div class="container"> 
+          <div class="d-flex justify-content-end align-items"> 
+            <div class="text-right"> <a href="#" class="text-white mr-3"><p><a href="#" class="text-white">Termos de Uso</a> | <a href="#" class="text-white">Política de Privacidade</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+body {
+    font-family: 'Inter'; /* Define a fonte padrão */
+    background-color: #F2F2F2 !important; /* Cor de fundo */ 
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+h1, h2, h3 {
+    font-weight: bold; /* Isso define o negrito para todos os h1, h2 e h3 */
+  }
+
+/* Cabeçalho */
+header {
+    background-color: #0C70F2;
+}
+
+header .container {
+    height: 80px; /* Altura reduzida para aproximar do visual da referência */
+}
+
+header h1 {
+    font-size: 40px; /* Tamanho da fonte do título reduzido */
+    margin-bottom: 0;
+}
+
+header .nav-item {
+    margin-left: 1rem; /* Espaçamento entre os links reduzido */
+}
+
+
+/* Seção de Introdução */
+.logo img {
+    width: 140px;
+    height: 140px;
+}
+
+.intro {
+    text-align: start;
+    padding: 20px 0;
+}
+
+.intro .text-container {
+    margin-right: 2rem;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Inter';
+    text-align: start;
+}
+
+/* Seção do Formulário */
+.form-section {
+    display: flex; /* Usa flexbox para disposição */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    margin-bottom: 40px;
+}
+
+.form-section .card {
+    border-radius: 10px; /* Bordas arredondadas para o cartão */
+    background-color: #FFFFFF; /* Cor de fundo branca para o cartão */
+    max-width: 500px; /* Largura máxima do cartão */
+    width: 100%; /* Largura total */
+    padding: 20px; /* Preenchimento interno */
+    border: none; /* Remove borda */
+}
+
+.form-section .card-body {
+    padding: 30px; /* Preenchimento interno do corpo do cartão */
+}
+
+.form-section form {
+    display: flex; /* Usa flexbox para disposição do formulário */
+    flex-direction: column; /* Disposição em coluna */
+    gap: 20px; /* Espaçamento entre os elementos do formulário */
+}
+
+.form-section .form-group {
+    display: flex; /* Usa flexbox para disposição dos inputs */
+    flex-direction: column; /* Disposição em coluna */
+    gap: 5px; /* Espaçamento entre o rótulo e o input */
+}
+
+.form-section .form-group label {
+    margin-bottom: 5px; /* Margem inferior para os rótulos */
+    font-size: 1rem; /* Tamanho da fonte dos rótulos */
+    color: #333; /* Cor do texto dos rótulos */
+}
+
+.form-section .form-group input {
+    border-radius: 5px; /* Bordas arredondadas para os inputs */
+    padding: 10px; /* Preenchimento interno dos inputs */
+    border: none; /* Remove borda dos inputs */
+    background-color: #F2F2F2; /* Cor de fundo para os inputs */
+    font-size: 1rem; /* Tamanho da fonte dos inputs */
+    color: #333; /* Cor do texto dos inputs */
+    outline: none; /* Remove o outline padrão dos inputs */
+    box-shadow: none; /* Remove a sombra dos inputs */
+}
+
+
+/* Estilo para o contêiner dos inputs */
+.input-container {
+    text-align: center; /* Alinhamento central do texto */
+    margin: 20px auto; /* Margem superior e inferior, centralizado horizontalmente */
+    font-family: 'Inter'; /* Fonte */
+}
+
+.input-container label {
+    display: block; /* Exibe o label como bloco */
+    margin-bottom: 10px; /* Margem inferior do label */
+    font-size: 1rem; /* Tamanho da fonte do label */
+    color: #0C70F2; /* Cor do texto do label */
+    
+}
+
+.inputs {
+    display: flex; /* Usa flexbox para disposição dos inputs */
+    justify-content: center; /* Centraliza os inputs horizontalmente */ 
+    gap: 5px; /* Espaçamento entre os inputs */
+    padding: 5px; /* Preenchimento interno do contêiner dos inputs */
+    border-radius: 10px; /* Bordas arredondadas para o contêiner dos inputs */
+}
+
+.inputs input {
+    padding: 10px 20px; /* Preenchimento interno dos inputs */
+    border: none; /* Sem borda */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #f2f2f2; /* Cor de fundo dos inputs */
+    font-size: 1rem; /* Tamanho da fonte dos inputs */
+    width: 200px; /* Largura dos inputs */
+    text-align: left; /* Alinhamento do texto na esquerda */
+    
+}
+
+.btn-primary,
+.form-section button {
+    background-color: #0C70F2 !important; 
+    border-color: #0C70F2 !important; 
+    box-shadow: 0 6px 8px rgba(12, 112, 242, 0.25) !important; 
+    border-radius: 5px !important; /* Pontas redondas */
+    color: white !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    font-size: 16px !important;
+    font-family: 'Inter';
+    text-transform: uppercase !important;
+}
+
+/* Seção de Resultados */
+.result-section {
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.result-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.result-section .logo img {
+    width: 136 133px;
+    height: auto;
+}
+
+.result-section .d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-section .logo {
+    margin-left: 30px;
+}
+
+.result-section .table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(15, 11, 11, 0.1);
+    background-color: #fff;
+}
+
+.result-section .table th,
+.result-section .table td {
+    text-align: left;
+    padding: 8px;
+}
+
+.result-section .table th {
+    background-color: #0C70F2;
+    color: white;
+}
+
+
+/* Seção de Previsão do Tempo */
+.weather-section {
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza a seção na página */
+}
+
+.weather-section h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.weather-section .d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.weather-section .logo {
+    margin-left: 10px;
+}
+
+
+/* Estilo para o contêiner com bordas arredondadas */
+.rounded-container {
+    background-color: #ffffff; /* Cor de fundo branca */
+    border: 2px solid #007bff; /* Borda azul */
+    padding: 5px; /* Preenchimento interno */
+    text-align: center !important; /* Alinhamento central do texto */
+    margin: 20px auto; /* Margem superior e inferior, centralizado horizontalmente */
+    border-radius: 25px; /* Bordas arredondadas */
+    width: 98%; /* Largura do contêiner */
+    font-weight: bold; /* Fonte em negrito */
+}
+
+.rounded-container p {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    color: #100f0f; /* Cor do texto preta */
+    margin: 0; /* Remove margem do parágrafo */
+}
+
+
+/* Estilo para o rodapé */
+.footer {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto branca */
+    padding: 1rem 0; /* Preenchimento interno */
+}
+
+/* Contêiner dentro do rodapé */
+.footer .container {
+    display: flex; /* Usa flexbox para disposição */
+    justify-content: flex-end; /* Alinha o conteúdo à direita */
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+
+/* Estilo do texto dentro do rodapé */
+.footer p {
+    margin: 0; /* Remove a margem padrão */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+
